@@ -22,7 +22,7 @@ def won? (board)
     win_index_3 = win_combination[2]
     board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && position_taken?(board,win_index_1)
   end
-  
+
 end
 
 def full?(board)
