@@ -40,3 +40,5 @@ end
 def winner (board)
   won?(board)[0]
 end  
+
+won?(["X", " ", " ", " ", "X", " ", " ", " ", "X"])
