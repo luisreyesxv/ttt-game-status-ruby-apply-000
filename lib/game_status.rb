@@ -25,7 +25,7 @@ def won? (board)
 end
 
 def full?(board)
-  !board.all? {|board_test|  board_test == "X" || board_test == "O" }
+  board.all? {|board_test|  board_test == "X" || board_test == "O" }
 end
 
 
