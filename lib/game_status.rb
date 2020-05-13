@@ -17,15 +17,14 @@ WIN_COMBINATIONS =[
 
 def won? (board)
 
-  WIN_COMBINATIONS.collect do |win_combination|
+  WIN_COMBINATIONS.detect do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
 
-    if board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && position_take?(board,win_index_1)
-        return win_combination
+    board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && position_take?(board,win_index_1)
 
-    end
+    
 
   end
 
