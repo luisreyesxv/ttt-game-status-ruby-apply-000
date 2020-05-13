@@ -39,7 +39,9 @@ def over?(board)
 end
 
 def winner(board)
+  if won?(board) != nil
   board[won?(board)[0]]
+  end
 end
 
 puts winner(["X", "O", " ", " ", " ", " ", " ", "O", "X"])
