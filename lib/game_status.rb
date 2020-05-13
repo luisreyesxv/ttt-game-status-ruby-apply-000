@@ -26,7 +26,7 @@ def won? (board)
       if win_combination.detect{ |position_check| position_check == true} == [true, true, true]
         return win_combination
       else
-        return false  
+        return false
     end
 #&& position_taken?(board,win_index_1) == true && position_taken?(board,win_index_2) == true && position_taken?(board,win_index_2) == true
 
