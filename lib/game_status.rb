@@ -42,4 +42,4 @@ def winner(board)
   board[won?(board)[0]]
 end
 
-puts winner(["X", " ", " ", " ", "X", " ", " ", " ", "X"])
+puts winner(["X", "O", " ", " ", " ", " ", " ", "O", "X"])
