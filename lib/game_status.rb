@@ -24,7 +24,7 @@ def won? (board)
 
     board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && position_taken?(board,win_index_1)
 
-    
+
 
   end
 
