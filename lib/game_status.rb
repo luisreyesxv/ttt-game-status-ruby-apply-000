@@ -13,6 +13,21 @@ WIN_COMBINATIONS =[
 [0,3,6],
 [1,4,7],
 [2,5,8]
-
-
 ]
+
+def won? (board)
+
+  WIN_COMBINATIONS.each do |win_combination|
+    win_index_1 = win_combination[0]
+    win_index_2 = win_combination[1]
+    win_index_3 = win_combination[2]
+
+    if board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && position_taken?(board,win_index_1) == true && position_taken?(board,win_index_2) == true && position_taken?(board,win_index_2) == true
+
+    
+  end  
+
+
+
+  
+end  
