@@ -25,5 +25,5 @@ def won? (board)
 end
 
 def full?(board)
-  board.reject{|board_test| if board_test.nil? || board_test == " " return false end}
+  board.select{|board_test|  board_test.nil? || board_test == " "}
 end
